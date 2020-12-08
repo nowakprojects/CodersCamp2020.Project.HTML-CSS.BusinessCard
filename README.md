@@ -112,4 +112,10 @@ Dobrej zabawy!
 
 
 ### Jak przygotować Pull Request z całą zawartością projektu?
-1. 
+1. Wykonaj checkout ostatniego commita sprzed rozpoczęcia prac nad projektem.
+`git checkout 82964829c22ff6a76f3a2ea1d4f7cd59f82da3b0`
+Zamiast powyższego hasha podaj ten skopiowany jak pokazano na zrzucie ekranu.
+![./.github/images/Project1Prepare6.png](./.github/images/GitCommitsHash.png)
+
+2. Będąc na tym commicie wykonaj push na brancha o nazwie code-review.
+
