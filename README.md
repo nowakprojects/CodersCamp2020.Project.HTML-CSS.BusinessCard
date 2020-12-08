@@ -117,5 +117,16 @@ Dobrej zabawy!
 Zamiast powyższego hasha podaj ten skopiowany jak pokazano na zrzucie ekranu.
 ![./.github/images/Project1Prepare6.png](./.github/images/GitCommitsHash.png)
 
-2. Będąc na tym commicie wykonaj push na brancha o nazwie code-review.
+2. Będąc na tym commicie utwórz z niego nowy branch.
+`git checkout -b code-review`
 
+3. Wykonaj push tego brancha. Teraz pojawi się on na GitHub.
+`git push -u origin code-review`
+
+4. Utwórz nowy Pull Request. Jako base repository koniecznie wybierz to w którym wykonujesz projekt (a nie forkowane).
+![./.github/images/Project1Prepare6.png](./.github/images/PullRequestRepo.png)
+
+5. Ustaw aby merge był z brancha main do brancha code-review. Dzięki temu wszystkie Twoje zmiany będą widoczne w jednym Pull Requescie.
+![./.github/images/Project1Prepare6.png](./.github/images/ChangesPr.png)
+
+6. Zatwierdź nowy Pull Request. Warto jako Reviewers wpisac członków zespołów :) 
