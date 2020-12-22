@@ -1,0 +1,52 @@
+@media screen and (max-width: 460px) {
+    #about-section {
+        height: 100%;
+    }
+    .about-icon i {
+        font-size: 5rem;
+    }
+    .about-description {
+        font-size: 1.2rem;
+    }
+    .about-intro h1 {
+        font-size: 2rem;
+    }
+    .work-img {
+        height: 10rem;
+        width: 10rem;
+    }
+    #contact-section {
+        font-size: 2rem;
+    }
+    .contact-form-wrap {
+        width: 100%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    input {
+        font-size: 2rem;
+        width: 20rem;
+    }
+    button { 
+        width: 15rem;
+        height: 4rem;
+        font-size: 1.2rem;
+    }
+    .up-icon i {
+        font-size: 4rem;
+    }
+    .up-icon {
+        position: absolute;
+        right: 2rem;
+        bottom: 5rem;
+    }
+    .contact-form-input-wrap {
+        flex-direction: column;
+    }
+    button {
+        margin: unset;
+    }
+}
