@@ -1,0 +1,21 @@
+@media screen and (max-width: 1366px) {
+  #welcome-section {
+    justify-content: center;
+  }
+  .nav-link-container {
+    width: 30rem;
+    height: 30rem;
+  }
+  .nav-link {
+    font-size: 6rem;
+  }
+  .about-intro {
+    font-size: 2rem;
+  }
+  .about-info-wrap {
+    width: 80vw;
+  }
+  .about-description {
+    font-size: 1.5rem;
+  }
+}

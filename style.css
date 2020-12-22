@@ -1,0 +1,244 @@
+html {
+    scroll-behavior: smooth;
+    font-size: 10px;
+}
+body {
+    font-family: 'Baloo Tamma 2', cursive;
+    margin: 0;
+}
+::-webkit-scrollbar {
+    width: 1rem;
+}
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(#FF1177, #3b3759);
+    border-radius: 5px;
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #000;
+    border-radius: 5px;
+    background-color: white;
+}
+#welcome-section {
+    height: 100vh;
+    background: linear-gradient(166deg, #3b3759, #000, #4c6e81);
+    position: sticky;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.nav-link-container {
+    width: 50rem;
+    height: 50rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.3;
+}
+.nav-link-container:hover {
+    opacity: 1;
+    animation: neon-link 1.5s ease-in-out infinite alternate;
+}
+.nav-link {
+    font-size: 8rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Righteous', cursive;
+    color: #FF1177;
+    transition: all 0.5s;
+}
+@keyframes neon-link {
+    from {
+      text-shadow: 0 0 10px #fff,
+                 0 0 20px  #fff,
+                 0 0 30px  #fff,
+                 0 0 40px  #FF1177,
+                 0 0 70px  #FF1177,
+                 0 0 80px  #FF1177,
+                 0 0 100px #FF1177,
+                 0 0 150px #FF1177;
+    }
+    to {
+      text-shadow: 0 0 5px #fff,
+                 0 0 10px #fff,
+                 0 0 15px #fff,
+                 0 0 20px #FF1177,
+                 0 0 35px #FF1177,
+                 0 0 40px #FF1177,
+                 0 0 50px #FF1177,
+                 0 0 75px #FF1177;
+    }
+  }
+#about-section {
+    height: 100vh;
+    padding: 20px;
+    background: linear-gradient(-166deg, #4c6e81, #000, #3b3759);
+    color: honeydew;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.about-intro {
+    font-size: 1.8rem;
+    color: honeydew;
+    text-align: center;
+}
+.about-intro h1 {
+    color: honeydew;
+    text-shadow: -1px 0 #ff1177, 0 1px #ff1177, 1px 0 #ff1177, 0 -1px #ff1177;
+    font-size: 5rem;
+    margin: 0;
+}
+.about-i-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.about-info-wrap {
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.about-icon i {
+    font-size: 7rem;
+    color: deeppink;
+    animation: neon-link 1.5s ease-in-out infinite alternate;
+}
+.about-description {
+    font-size: 1.8rem;
+    text-align: justify;
+    width: 40vw;
+}
+#work-section {
+    height: 100%;
+    background: linear-gradient(166deg, #3b3759, #000, #4c6e81);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.work-img-wrap {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.work-img {
+    height: 20rem;
+    width: 20rem;
+    margin: 2%;
+    opacity: 0.5;
+    box-shadow: -1px 4px 44px -15px rgba(255,255,255,1);
+    border: solid 0.2rem white;
+}
+.work-img:hover {
+    opacity: 1;
+}
+.img-1 {
+    background-image: url("./assets/web\ 1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+.img-2 {
+    background-image: url("./assets/web\ 2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+.img-3 {
+    background-image: url("./assets/web\ 3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+.img-4 {
+    background-image: url("./assets/web\ 4.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+.img-5 {
+    background-image: url("./assets/web\ 5.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+#contact-section {
+    height: 100vh;
+    background: linear-gradient(-166deg, #4c6e81, #000, #3b3759);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 3rem;
+    color: honeydew;
+    position: relative;
+}
+.contact-form-wrap {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+.contact-form-input-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8rem;
+}
+input {
+    font-size: 2.5rem;
+    color: #17bbbb;
+    font-family: 'Baloo Tamma 2', cursive;
+    border: none;
+    border-bottom: 0.2rem honeydew dotted;
+    background-color: inherit;
+    width: 26rem;
+    height: 3rem;
+    margin-left: 1.5rem;
+    outline: none;
+}
+::placeholder {
+    color: #FF1177;
+    opacity: 1; 
+}
+button {
+    width: 20rem;
+    height: 5rem;
+    background-color: inherit;
+    border: 1px solid #ff1177;
+    border-radius: 1rem;
+    font-size: 2rem;
+    align-self: center;
+    margin-top: 3rem;
+    outline: none;
+    transition: ease-in-out 1s;
+}
+button:hover {
+    background-color: #ff1177;
+    color: honeydew;
+    box-shadow: 1px 0px 44px -1px rgba(255,255,255,1);
+    cursor: pointer;
+}
+.goodbye-text {
+    color: honeydew;
+    text-shadow: -1px 0 #ff1177, 0 1px #ff1177, 1px 0 #ff1177, 0 -1px #ff1177;
+}
+.up-icon {
+    position: absolute;
+    bottom: 10rem;
+    right: 20rem;
+}
+.up-icon i {
+    font-size: 5rem;
+    color: honeydew;
+    text-shadow: 3px 3px 2px rgba(255, 17, 119, 1);
+    transition: ease-in-out 1s;
+}
+.up-icon i:hover {
+    color: rgba(255, 17, 119, 1);
+    text-shadow: 3px 3px 2px honeydew;
+}
